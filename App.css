@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&display=swap');
+
+body {
+  color: white;
+  font-family: 'Lexend Exa', sans-serif;
+  background: rgb(46, 0, 255);
+  background: linear-gradient(90deg, rgba(46, 0, 255, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.ticket, .theform {
+  flex: 1;
+  padding: 20px;
+}
+
+.theform form {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  justify-content: center;
+  align-items: center;
+}
+
+input, select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0px 20px #ffffff;
+  border: none;
+  outline: none;
+}
+
+
+
+button {
+  background-color: #c300ff;
+  width: 80%;
+  border: none;
+  padding: 11px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #474bff;
+}
+
+
+.STANDARD {
+  
+  --s: 200px; /* control the size*/
+  --c1: #520000;
+  --c2: #c20000;
+  --c3: #fe5d5d;
+  
+  background:
+    repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 50%) 
+     calc(var(--s)/2) calc(var(--s)*tan(30deg)/2),
+    repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 50%);
+  background-size: var(--s) calc(var(--s)*tan(30deg));
+  
+  
+  padding: 20px;
+}
+
+.GOLD {
+
+  --s: 200px; /* control the size*/
+  --c1: #998000;
+  --c2: #bfc200;
+  --c3: #ebfe5d;
+  
+  background:
+    repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 50%) 
+     calc(var(--s)/2) calc(var(--s)*tan(30deg)/2),
+    repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 50%);
+  background-size: var(--s) calc(var(--s)*tan(30deg));
+  
+  padding: 20px;
+ }
+
+
+.PLATENIUM {
+  
+    --s: 200px; /* control the size*/
+    --c1: #1d1d1d;
+    --c2: #4e4f51;
+    --c3: #3c3c3c;
+    
+    background:
+      repeating-conic-gradient(from 30deg,#0000 0 120deg,var(--c3) 0 50%) 
+       calc(var(--s)/2) calc(var(--s)*tan(30deg)/2),
+      repeating-conic-gradient(from 30deg,var(--c1) 0 60deg,var(--c2) 0 120deg,var(--c3) 0 50%);
+    background-size: var(--s) calc(var(--s)*tan(30deg));
+  
+  padding: 20px;
+  
+
+}
+.ticket{
+  font-weight: bold;
+  text-shadow: 0 5px 5px black;
+}
+.ticket h2,.ticket h3{
+  font-weight: bolder;
+}
+
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .ticket, .theform {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
